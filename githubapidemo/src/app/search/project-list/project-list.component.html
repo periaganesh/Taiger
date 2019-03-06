@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">Project List</div>
+  <div class="card-body scroll-y height-500">
+    <div *ngIf="error" class="card-title text-danger">{{error}}</div>
+    <div class="card-text">
+        <ul>
+          <li *ngFor="let project of projects">
+            <a (click)="projectClicked(project)">{{project}}</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>

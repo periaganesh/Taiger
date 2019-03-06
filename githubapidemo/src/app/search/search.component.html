@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 text-right">
+      <input type="text" [(ngModel)]="username"/>
+    </div>
+    <div class="col-6 text-left">
+      <button (click)="search()">Search</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <project-list [projects]="userProjects" [error]="userProfileError" (onProjectClick)="displayReadMe($event)"></project-list>
+    </div>
+    <div class="col-6">
+      <project-readme [readme]="readme" [error]="readmeError"></project-readme>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.scroll-y{
+    overflow-y: scroll;
+}
+
+.height-500{
+    height: 500px;
+}
